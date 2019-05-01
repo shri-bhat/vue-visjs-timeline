@@ -67,6 +67,7 @@ export default {
 
 ##### Supported events
 Note: Only limited events are supported for now
+
 | Events        | Description               |
 | --- |---|
 | v-on:item-move | On item position change |
@@ -74,6 +75,7 @@ Note: Only limited events are supported for now
 
 ##### Supported props
 Note: Only limited props are enabled
+
 | Name        | Description |
 | --- |---|
 | v-bind:items | List of items |
