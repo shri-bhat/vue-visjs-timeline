@@ -1,12 +1,12 @@
 # Vue-visjs-timeline
 Vue component for the [vis.js](http://visjs.org/) timeline module.
 
-#### Installation
+### Installation
 ```
 npm i -- save vue-visjs-timeline
 ```
 
-#### Basic usage
+### Basic usage
 Import and declare the component
 ```javascript
 import timeline from 'vue-visjs-timeline'
@@ -39,18 +39,18 @@ export default {
 }
 ```
 
-##### Styling
+#### Styling
 Custom CSS added to enhance the UI. Import custom CSS
 ```
 require('../node_modules/vue-visjs-timeline/dist/vue-visjs-timeline.css')
 ```
 
-##### Configure tools
+#### Configure tools
 Tools is group of options (Go today, Zoom in, Zoom out). Enabled by default. Add the configuration to disable.
 ```
 <timeline v-bind:items="items" v-bind:groups="groups" :hide-tools=true></timeline>
 ```
-##### Events
+#### Events
 This event is triggered when item is moved or changed
 ```
 <timeline v-bind:items="items" v-bind:groups="groups" v-on:item-move="updateItem"></timeline>
@@ -65,7 +65,7 @@ export default {
 }
 ```
 
-##### Supported events
+#### Supported events
 Note: Only limited events are supported for now
 
 | Events        | Description               |
@@ -73,7 +73,7 @@ Note: Only limited events are supported for now
 | v-on:item-move | On item position change |
 | v-on:range-changed | On window zoom in/out or move|
 
-##### Supported props
+#### Supported props
 Note: Only limited props are enabled
 
 | Name        | Description |
