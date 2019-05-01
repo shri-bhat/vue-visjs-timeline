@@ -67,15 +67,15 @@ export default {
 
 ##### Supported events
 Note: Only limited events are supported for now
-| Events        | Description |
-| ------------- |--|
+| Events        | Description               |
+| --- |---|
 | v-on:item-move | On item position change |
 | v-on:range-changed | On window zoom in/out or move|
 
 ##### Supported props
 Note: Only limited props are enabled
 | Name        | Description |
-| ------------- |--|
+| --- |---|
 | v-bind:items | List of items |
 | v-bind:groups | List of groups |
 | v-bind:option | Timeline option (If not present default option is added) |
