@@ -1,0 +1,163 @@
+.vs-btn-group {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.vs-btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .20rem .40rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.vs-btn-light {
+  color: #212529;
+  background-color: #ecf0f1;
+  border-color: #ecf0f1;
+  margin: 0;
+}
+
+.vs-btn-group>.vs-btn {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.vs-btn-group>.vs-btn:not(:last-child),
+.vs-btn-group>.vs-btn-group:not(:last-child)>.vs-btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.vs-btn-group>.vs-btn:not(:first-child),
+.vs-btn-group>.vs-btn-group:not(:first-child)>.vs-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.vs-btn-light:hover {
+  color: #212529;
+  background-color: #d6dfe1;
+  border-color: #cfd9db;
+}
+
+.vis-timeline {
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0 0 1px 0 !important;
+}
+
+.vis-time-axis .vis-grid.vis-major {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.vis-time-axis .vis-grid.vis-minor {
+  border-color: rgba(0, 0, 0, 0.04);
+}
+
+.vis-text>div {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.vis-text.vis-major {
+  bottom: 0px;
+}
+
+.vis-text {
+  font-size: 12px;
+}
+
+.vis-text.vis-saturday,
+.vis-text.vis-sunday {
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.vis-item {
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  text-align: center;
+  line-height: 1.2 !important;
+  background-color: #9933CC;
+}
+
+.vis-item.vis-selected {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent) !important;
+  background-size: 1rem 1rem !important;
+}
+
+.vis-item .vis-item-overflow {
+  cursor: move;
+}
+
+.vis-drag-left,
+.vis-drag-right {
+  cursor: col-resize !important;
+}
+
+.vis-item-content {
+  left: 0px !important;
+  right: 0px !important;
+  padding: 3px 10px !important;
+  margin: 0 !important;
+  text-overflow: ellipsis;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: bottom;
+  width: 100% !important;
+}
+
+.vis-vertical-scroll {
+  display: none !important;
+}
+
+.vis-panel.vis-center,
+.vis-panel.vis-top {
+  left: 0px !important;
+  width: 100% !important;
+}
+
+.vis-group {
+  border: 0 !important;
+  height: 30px !important;
+}
+
+.vis-itemset .vis-foreground .vis-group:first-child {
+  height: 45px !important;
+}
+
+#timeline {
+  position: relative;
+  height: 100%;
+}
+
+#timeline>.tools {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  z-index: 100;
+}
+
+#timeline>.tools .btn {
+  padding: 4px 8px;
+  color: #666;
+}
