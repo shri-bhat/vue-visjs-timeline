@@ -1,7 +1,7 @@
 {
   "name": "vue-visjs-timeline",
   "description": "Vue component for the vis.js timeline module.",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "private": false,
   "scripts": {
     "lint": "vue-cli-service lint",
