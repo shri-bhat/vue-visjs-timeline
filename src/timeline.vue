@@ -70,17 +70,13 @@ export default {
     zoomOut: function () {
       this.timeline.zoomOut(0.4);
     },
-    initTimeline: function (start, end) {
+    initTimeline: function () {
       var container = document.getElementById('timeline');
     
       // Create a Timeline
       if (!this.timeline) {
         this.timeline = new vis.Timeline(container, this.timelineData.items, this.timelineData.groups, this.timelineData.option);
         this.timeline.on('rangechanged', e => {this.$emit('range-changed', e)});
-        
-        setTimeout(() => { 
-          this.timeline.setWindow(start, end);
-        }, 400);
       }
     },
     updateTimeline: function () {
@@ -97,7 +93,10 @@ export default {
     }
     this.timelineData.items = this.items
     this.timelineData.groups = this.groups
-    this.initTimeline(this.start, this.end)
+
+    this.timelineData.option.start = this.start
+    this.timelineData.option.end = this.end
+    this.initTimeline()
   }
 }
 
