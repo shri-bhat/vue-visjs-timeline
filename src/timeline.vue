@@ -89,7 +89,8 @@ export default {
     // If not present use default
     if (this.option) {
       this.timelineData.option = this.option
-      this.timelineData.option.onMove = item => { this.$emit('item-move', item)}
+      this.timelineData.option.onMove = item => {this.$emit('item-move', item)}
+      this.timelineData.option.onRemove = (item) => {this.$emit('item-delete', item)}
     }
     this.timelineData.items = this.items
     this.timelineData.groups = this.groups
